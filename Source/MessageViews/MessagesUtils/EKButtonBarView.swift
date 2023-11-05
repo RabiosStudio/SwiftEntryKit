@@ -32,6 +32,14 @@ final public class EKButtonBarView: UIView {
         }
     }
     
+    public func showLoader(loader: UIView, at index: Int) {
+        buttonViews[index].setupLoader(loader: loader)
+    }
+    
+    public func hideLoader(loader: UIView, at index: Int) {
+        buttonViews[index].removeLoader(loader: loader)
+    }
+    
     private lazy var buttonEdgeRatio: CGFloat = {
         return 1.0 / CGFloat(self.buttonBarContent.content.count)
     }()

@@ -11,7 +11,7 @@ import UIKit
 public struct EKProperty {
     
     /** Button content descriptor */
-    public struct ButtonContent {
+    public class ButtonContent {
         
         public typealias Action = () -> ()
         

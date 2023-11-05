@@ -10,7 +10,7 @@ import UIKit
 final public class EKAlertMessageView: EKSimpleMessageView, EntryAppearanceDescriptor {
     
     // MARK: Props
-    var buttonBarView: EKButtonBarView!
+    public var buttonBarView: EKButtonBarView!
     private var buttonsBarCompressedConstraint: NSLayoutConstraint!
     private var buttonsBarExpandedConstraint: NSLayoutConstraint!
     

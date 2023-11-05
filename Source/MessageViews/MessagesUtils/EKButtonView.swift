@@ -50,6 +50,17 @@ final class EKButtonView: UIView {
                          for: .touchUpInside)
     }
     
+    func setupLoader(loader: UIView) {
+        addSubview(loader)
+        loader.fillSuperview()
+        titleLabel.alpha = .zero
+    }
+    
+    func removeLoader(loader: UIView) {
+        loader.removeFromSuperview()
+        titleLabel.alpha = 1
+    }
+    
     private func setupTitleLabel() {
         titleLabel.numberOfLines = content.label.style.numberOfLines
         titleLabel.font = content.label.style.font
