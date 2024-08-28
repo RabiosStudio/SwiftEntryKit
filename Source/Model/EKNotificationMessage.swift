@@ -20,6 +20,14 @@ public struct EKNotificationMessage {
         public var titleToDescription: CGFloat = 5
         
         public static var `default` = Insets()
+
+        public init(
+            contentInsets: UIEdgeInsets = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16),
+            titleToDescription: CGFloat = 5
+        ) {
+            self.contentInsets = contentInsets
+            self.titleToDescription = titleToDescription
+        }
     }
     
     /** Image, Title, Description */
